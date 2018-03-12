@@ -222,5 +222,3 @@ You might need to go through the code if you want to fully understand the apis.
 ## 8. Useful Links ##
 · **IBM Wiki**: [http://www.ibm.com/developerworks/library/os-test-stafstax/](http://www.ibm.com/developerworks/library/os-test-stafstax/)
 · **Source**: [http://staf.sourceforge.net/](http://staf.sourceforge.net/)
-
-
