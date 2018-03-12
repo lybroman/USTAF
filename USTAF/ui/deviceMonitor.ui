@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Device Monitor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_6">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Scenario View</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QTreeView" name="senarioTreeView">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="contextMenuPolicy">
+              <enum>Qt::CustomContextMenu</enum>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::ExtendedSelection</enum>
+             </property>
+             <attribute name="headerVisible">
+              <bool>false</bool>
+             </attribute>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Task View</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QListView" name="taskListView"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>Execution Queue</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QTreeView" name="queueTreeView">
+           <property name="contextMenuPolicy">
+            <enum>Qt::CustomContextMenu</enum>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::ExtendedSelection</enum>
+           </property>
+           <attribute name="headerVisible">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAddScenario"/>
+   <addaction name="separator"/>
+   <addaction name="actionRun"/>
+   <addaction name="separator"/>
+   <addaction name="actionPause"/>
+   <addaction name="separator"/>
+   <addaction name="actionCancelCurrentTask"/>
+   <addaction name="actionClearTaskQueue"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionAddScenario">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/scenario.png</normaloff>:/icons/icons/scenario.png</iconset>
+   </property>
+   <property name="text">
+    <string>addScenario</string>
+   </property>
+   <property name="toolTip">
+    <string>add a new scenario</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/run.png</normaloff>:/icons/icons/run.png</iconset>
+   </property>
+   <property name="text">
+    <string>run</string>
+   </property>
+   <property name="toolTip">
+    <string>start task runner</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/pause.png</normaloff>:/icons/icons/pause.png</iconset>
+   </property>
+   <property name="text">
+    <string>pause</string>
+   </property>
+   <property name="toolTip">
+    <string>pause task runner</string>
+   </property>
+  </action>
+  <action name="actionAddToExecutionQueue">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/add.png</normaloff>:/icons/icons/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>addToExecutionQueue</string>
+   </property>
+   <property name="toolTip">
+    <string>add the test case to execution queue</string>
+   </property>
+  </action>
+  <action name="actionRemoveCase">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/minus.png</normaloff>:/icons/icons/minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>removeCase</string>
+   </property>
+   <property name="toolTip">
+    <string>remove a case from scenario</string>
+   </property>
+  </action>
+  <action name="actionCaseDetails">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/case_detail.png</normaloff>:/icons/icons/case_detail.png</iconset>
+   </property>
+   <property name="text">
+    <string>caseDetails</string>
+   </property>
+   <property name="toolTip">
+    <string>case parameters</string>
+   </property>
+  </action>
+  <action name="actionRemoveScenario">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/minus.png</normaloff>:/icons/icons/minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>removeScenario</string>
+   </property>
+   <property name="toolTip">
+    <string>remove a scenario from DUT</string>
+   </property>
+  </action>
+  <action name="actionCancelCurrentTask">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/cancel_current.png</normaloff>:/icons/icons/cancel_current.png</iconset>
+   </property>
+   <property name="text">
+    <string>cancelCurrentTask</string>
+   </property>
+   <property name="toolTip">
+    <string>cancel current running task</string>
+   </property>
+  </action>
+  <action name="actionClearTaskQueue">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/cancel_all.png</normaloff>:/icons/icons/cancel_all.png</iconset>
+   </property>
+   <property name="text">
+    <string>clearTaskQueue</string>
+   </property>
+   <property name="toolTip">
+    <string>clear the task queue</string>
+   </property>
+  </action>
+  <action name="actionRemoveFromQueue">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/minus.png</normaloff>:/icons/icons/minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>removeFromQueue</string>
+   </property>
+   <property name="toolTip">
+    <string>remove task from queue</string>
+   </property>
+  </action>
+  <action name="actionClearResults">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/clear_results.png</normaloff>:/icons/icons/clear_results.png</iconset>
+   </property>
+   <property name="text">
+    <string>clearResults</string>
+   </property>
+   <property name="toolTip">
+    <string>clear all results</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

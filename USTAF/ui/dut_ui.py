@@ -1,0 +1,146 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'dut.ui'
+#
+# Created by: PyQt4 UI code generator 4.11.4
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName(_fromUtf8("Dialog"))
+        Dialog.resize(600, 597)
+        self.gridLayout_2 = QtGui.QGridLayout(Dialog)
+        self.gridLayout_2.setObjectName(_fromUtf8("gridLayout_2"))
+        self.groupBox = QtGui.QGroupBox(Dialog)
+        self.groupBox.setObjectName(_fromUtf8("groupBox"))
+        self.gridLayout = QtGui.QGridLayout(self.groupBox)
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
+        self.label = QtGui.QLabel(self.groupBox)
+        self.label.setObjectName(_fromUtf8("label"))
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+        self.DeviceNamelineEdit = QtGui.QLineEdit(self.groupBox)
+        self.DeviceNamelineEdit.setObjectName(_fromUtf8("DeviceNamelineEdit"))
+        self.gridLayout.addWidget(self.DeviceNamelineEdit, 0, 1, 1, 2)
+        self.label_2 = QtGui.QLabel(self.groupBox)
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
+        self.DeviceIDlineEdit = QtGui.QLineEdit(self.groupBox)
+        self.DeviceIDlineEdit.setObjectName(_fromUtf8("DeviceIDlineEdit"))
+        self.gridLayout.addWidget(self.DeviceIDlineEdit, 1, 1, 1, 2)
+        self.label_4 = QtGui.QLabel(self.groupBox)
+        self.label_4.setObjectName(_fromUtf8("label_4"))
+        self.gridLayout.addWidget(self.label_4, 2, 0, 1, 1)
+        self.label_5 = QtGui.QLabel(self.groupBox)
+        self.label_5.setObjectName(_fromUtf8("label_5"))
+        self.gridLayout.addWidget(self.label_5, 3, 0, 1, 1)
+        self.SlaveDeviceNameLineEdit = QtGui.QLineEdit(self.groupBox)
+        self.SlaveDeviceNameLineEdit.setObjectName(_fromUtf8("SlaveDeviceNameLineEdit"))
+        self.gridLayout.addWidget(self.SlaveDeviceNameLineEdit, 3, 1, 1, 2)
+        self.label_6 = QtGui.QLabel(self.groupBox)
+        self.label_6.setObjectName(_fromUtf8("label_6"))
+        self.gridLayout.addWidget(self.label_6, 4, 0, 1, 1)
+        self.SlaveDeviceIDLineEdit = QtGui.QLineEdit(self.groupBox)
+        self.SlaveDeviceIDLineEdit.setObjectName(_fromUtf8("SlaveDeviceIDLineEdit"))
+        self.gridLayout.addWidget(self.SlaveDeviceIDLineEdit, 4, 1, 1, 2)
+        self.label_7 = QtGui.QLabel(self.groupBox)
+        self.label_7.setObjectName(_fromUtf8("label_7"))
+        self.gridLayout.addWidget(self.label_7, 5, 0, 1, 1)
+        self.ProjectCodeLineEdit = QtGui.QLineEdit(self.groupBox)
+        self.ProjectCodeLineEdit.setObjectName(_fromUtf8("ProjectCodeLineEdit"))
+        self.gridLayout.addWidget(self.ProjectCodeLineEdit, 5, 1, 1, 2)
+        self.label_10 = QtGui.QLabel(self.groupBox)
+        self.label_10.setObjectName(_fromUtf8("label_10"))
+        self.gridLayout.addWidget(self.label_10, 6, 0, 1, 1)
+        self.PlatformLineEdit = QtGui.QLineEdit(self.groupBox)
+        self.PlatformLineEdit.setObjectName(_fromUtf8("PlatformLineEdit"))
+        self.gridLayout.addWidget(self.PlatformLineEdit, 6, 1, 1, 2)
+        self.label_11 = QtGui.QLabel(self.groupBox)
+        self.label_11.setObjectName(_fromUtf8("label_11"))
+        self.gridLayout.addWidget(self.label_11, 7, 0, 1, 1)
+        self.SubPlatformLineEdit = QtGui.QLineEdit(self.groupBox)
+        self.SubPlatformLineEdit.setObjectName(_fromUtf8("SubPlatformLineEdit"))
+        self.gridLayout.addWidget(self.SubPlatformLineEdit, 7, 1, 1, 2)
+        self.label_8 = QtGui.QLabel(self.groupBox)
+        self.label_8.setObjectName(_fromUtf8("label_8"))
+        self.gridLayout.addWidget(self.label_8, 8, 0, 1, 1)
+        self.radioButtonPV = QtGui.QRadioButton(self.groupBox)
+        self.radioButtonPV.setAutoExclusive(False)
+        self.radioButtonPV.setObjectName(_fromUtf8("radioButtonPV"))
+        self.gridLayout.addWidget(self.radioButtonPV, 8, 1, 1, 1)
+        self.radioButtonOTM = QtGui.QRadioButton(self.groupBox)
+        self.radioButtonOTM.setAutoExclusive(False)
+        self.radioButtonOTM.setObjectName(_fromUtf8("radioButtonOTM"))
+        self.gridLayout.addWidget(self.radioButtonOTM, 8, 2, 1, 1)
+        self.label_9 = QtGui.QLabel(self.groupBox)
+        self.label_9.setObjectName(_fromUtf8("label_9"))
+        self.gridLayout.addWidget(self.label_9, 9, 0, 1, 1)
+        self.radioButtonCIT = QtGui.QRadioButton(self.groupBox)
+        self.radioButtonCIT.setAutoExclusive(False)
+        self.radioButtonCIT.setObjectName(_fromUtf8("radioButtonCIT"))
+        self.gridLayout.addWidget(self.radioButtonCIT, 9, 1, 1, 1)
+        self.radioButtonPIT = QtGui.QRadioButton(self.groupBox)
+        self.radioButtonPIT.setAutoExclusive(False)
+        self.radioButtonPIT.setObjectName(_fromUtf8("radioButtonPIT"))
+        self.gridLayout.addWidget(self.radioButtonPIT, 9, 2, 1, 1)
+        self.radioButtonFULL = QtGui.QRadioButton(self.groupBox)
+        self.radioButtonFULL.setAutoExclusive(False)
+        self.radioButtonFULL.setObjectName(_fromUtf8("radioButtonFULL"))
+        self.gridLayout.addWidget(self.radioButtonFULL, 9, 3, 1, 1)
+        self.label_3 = QtGui.QLabel(self.groupBox)
+        self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.gridLayout.addWidget(self.label_3, 10, 0, 1, 1)
+        self.DeviceInfoTextEdit = QtGui.QTextEdit(self.groupBox)
+        self.DeviceInfoTextEdit.setObjectName(_fromUtf8("DeviceInfoTextEdit"))
+        self.gridLayout.addWidget(self.DeviceInfoTextEdit, 10, 1, 1, 3)
+        self.buttonBox = QtGui.QDialogButtonBox(self.groupBox)
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
+        self.buttonBox.setObjectName(_fromUtf8("buttonBox"))
+        self.gridLayout.addWidget(self.buttonBox, 11, 0, 1, 2)
+        self.DeviceGroupComboBox = QtGui.QComboBox(self.groupBox)
+        self.DeviceGroupComboBox.setObjectName(_fromUtf8("DeviceGroupComboBox"))
+        self.gridLayout.addWidget(self.DeviceGroupComboBox, 2, 1, 1, 2)
+        self.gridLayout_2.addWidget(self.groupBox, 0, 0, 1, 1)
+
+        self.retranslateUi(Dialog)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), Dialog.accept)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("rejected()")), Dialog.reject)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        Dialog.setWindowTitle(_translate("Dialog", "DUT information", None))
+        self.groupBox.setTitle(_translate("Dialog", "DUT Information", None))
+        self.label.setText(_translate("Dialog", "Device Name", None))
+        self.label_2.setText(_translate("Dialog", "Device ID", None))
+        self.label_4.setText(_translate("Dialog", "Device Group", None))
+        self.label_5.setText(_translate("Dialog", "Slave Name", None))
+        self.label_6.setText(_translate("Dialog", "Slave ID", None))
+        self.label_7.setText(_translate("Dialog", "Project Code", None))
+        self.label_10.setText(_translate("Dialog", "Platform", None))
+        self.label_11.setText(_translate("Dialog", "Sub-Platform", None))
+        self.label_8.setText(_translate("Dialog", "Branch", None))
+        self.radioButtonPV.setText(_translate("Dialog", "PV", None))
+        self.radioButtonOTM.setText(_translate("Dialog", "OTM", None))
+        self.label_9.setText(_translate("Dialog", "Type", None))
+        self.radioButtonCIT.setText(_translate("Dialog", "CIT", None))
+        self.radioButtonPIT.setText(_translate("Dialog", "PIT", None))
+        self.radioButtonFULL.setText(_translate("Dialog", "FULL", None))
+        self.label_3.setText(_translate("Dialog", "Device info", None))
+

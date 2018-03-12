@@ -1,0 +1,39 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/add.png</file>
+    <file>icons/minus.png</file>
+    <file>icons/config.png</file>
+    <file>icons/configuration.png</file>
+    <file>icons/pause.png</file>
+    <file>icons/socket.png</file>
+    <file>icons/add_case.png</file>
+    <file>icons/clear_results.png</file>
+    <file>icons/case_detail.png</file>
+    <file>icons/running.png</file>
+    <file>icons/cancel_all.png</file>
+    <file>icons/cancel_current.png</file>
+    <file>icons/cancel.png</file>
+    <file>icons/rerun-pass.png</file>
+    <file>icons/load.png</file>
+    <file>icons/save.png</file>
+    <file>icons/wait.png</file>
+    <file>icons/remove_case.png</file>
+    <file>icons/refresh.png</file>
+    <file>icons/case-fail.png</file>
+    <file>icons/case-not-run.png</file>
+    <file>icons/case-pass.png</file>
+    <file>icons/case-question.png</file>
+    <file>icons/run.png</file>
+    <file>icons/save.png</file>
+    <file>icons/monitor.png</file>
+    <file>icons/scenario.png</file>
+    <file>icons/cluster.png</file>
+    <file>icons/add_device.png</file>
+    <file>icons/device.png</file>
+    <file>icons/refresh.png</file>
+    <file>icons/alive.png</file>
+    <file>icons/dead.png</file>
+    <file>icons/locked.png</file>
+    <file>icons/unknown.png</file>
+  </qresource>
+</RCC>

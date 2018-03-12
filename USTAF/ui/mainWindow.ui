@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>739</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ultra Software Test Automation Framework</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Group Pool Viewer</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1">
+        <widget class="QTreeView" name="groupTreeView">
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="dragDropOverwriteMode">
+          <bool>false</bool>
+         </property>
+         <property name="dragDropMode">
+          <enum>QAbstractItemView::DragDrop</enum>
+         </property>
+         <property name="defaultDropAction">
+          <enum>Qt::MoveAction</enum>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="sortingEnabled">
+          <bool>true</bool>
+         </property>
+         <attribute name="headerVisible">
+          <bool>true</bool>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="logDockWidget">
+   <property name="minimumSize">
+    <size>
+     <width>270</width>
+     <height>559</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>Log Viewer</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QTextEdit" name="logTextEdit"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionCreateGroup"/>
+   <addaction name="actionRefresh"/>
+   <addaction name="separator"/>
+   <addaction name="actionLoadWorkSpace"/>
+   <addaction name="actionSaveWorkSpace"/>
+   <addaction name="actionStartListener"/>
+   <addaction name="separator"/>
+   <addaction name="actionConfigServer"/>
+  </widget>
+  <action name="actionCreateGroup">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/cluster.png</normaloff>:/icons/icons/cluster.png</iconset>
+   </property>
+   <property name="text">
+    <string>CreateGroup</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;create a DUT pool for same test purpose&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actionAddNewDut">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/add_device.png</normaloff>:/icons/icons/add_device.png</iconset>
+   </property>
+   <property name="text">
+    <string>addNewDut</string>
+   </property>
+   <property name="toolTip">
+    <string>Add a new Device Under Test</string>
+   </property>
+  </action>
+  <action name="actionRemoveDut">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/minus.png</normaloff>:/icons/icons/minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>removeDut</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove a Device under Test</string>
+   </property>
+  </action>
+  <action name="actionConfigureDut">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/config.png</normaloff>:/icons/icons/config.png</iconset>
+   </property>
+   <property name="text">
+    <string>configureDut</string>
+   </property>
+   <property name="toolTip">
+    <string>edit DUT info</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/refresh.png</normaloff>:/icons/icons/refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>refresh</string>
+   </property>
+   <property name="toolTip">
+    <string>refresh Dut Status</string>
+   </property>
+  </action>
+  <action name="actionOpenDutView">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/monitor.png</normaloff>:/icons/icons/monitor.png</iconset>
+   </property>
+   <property name="text">
+    <string>openDutView</string>
+   </property>
+  </action>
+  <action name="actionLoadWorkSpace">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/load.png</normaloff>:/icons/icons/load.png</iconset>
+   </property>
+   <property name="text">
+    <string>loadWorkSpace</string>
+   </property>
+  </action>
+  <action name="actionSaveWorkSpace">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/save.png</normaloff>:/icons/icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>saveWorkSpace</string>
+   </property>
+  </action>
+  <action name="actionConfigServer">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/config.png</normaloff>:/icons/icons/config.png</iconset>
+   </property>
+   <property name="text">
+    <string>configServer</string>
+   </property>
+  </action>
+  <action name="actionStartListener">
+   <property name="icon">
+    <iconset resource="resources_rc.qrc">
+     <normaloff>:/icons/icons/socket.png</normaloff>:/icons/icons/socket.png</iconset>
+   </property>
+   <property name="text">
+    <string>startListener</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

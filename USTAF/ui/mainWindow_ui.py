@@ -1,0 +1,152 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'mainWindow.ui'
+#
+# Created by: PyQt4 UI code generator 4.11.4
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName(_fromUtf8("MainWindow"))
+        MainWindow.resize(739, 613)
+        self.centralwidget = QtGui.QWidget(MainWindow)
+        self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
+        self.gridLayout_2 = QtGui.QGridLayout(self.centralwidget)
+        self.gridLayout_2.setObjectName(_fromUtf8("gridLayout_2"))
+        self.groupBox = QtGui.QGroupBox(self.centralwidget)
+        self.groupBox.setObjectName(_fromUtf8("groupBox"))
+        self.gridLayout = QtGui.QGridLayout(self.groupBox)
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
+        self.groupTreeView = QtGui.QTreeView(self.groupBox)
+        self.groupTreeView.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
+        self.groupTreeView.setAcceptDrops(False)
+        self.groupTreeView.setEditTriggers(QtGui.QAbstractItemView.NoEditTriggers)
+        self.groupTreeView.setDragEnabled(False)
+        self.groupTreeView.setDragDropOverwriteMode(False)
+        self.groupTreeView.setDragDropMode(QtGui.QAbstractItemView.DragDrop)
+        self.groupTreeView.setDefaultDropAction(QtCore.Qt.MoveAction)
+        self.groupTreeView.setSelectionMode(QtGui.QAbstractItemView.SingleSelection)
+        self.groupTreeView.setSelectionBehavior(QtGui.QAbstractItemView.SelectRows)
+        self.groupTreeView.setSortingEnabled(True)
+        self.groupTreeView.setObjectName(_fromUtf8("groupTreeView"))
+        self.groupTreeView.header().setVisible(True)
+        self.gridLayout.addWidget(self.groupTreeView, 0, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.groupBox, 0, 0, 1, 1)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtGui.QStatusBar(MainWindow)
+        self.statusbar.setObjectName(_fromUtf8("statusbar"))
+        MainWindow.setStatusBar(self.statusbar)
+        self.logDockWidget = QtGui.QDockWidget(MainWindow)
+        self.logDockWidget.setMinimumSize(QtCore.QSize(270, 559))
+        self.logDockWidget.setObjectName(_fromUtf8("logDockWidget"))
+        self.dockWidgetContents_2 = QtGui.QWidget()
+        self.dockWidgetContents_2.setObjectName(_fromUtf8("dockWidgetContents_2"))
+        self.gridLayout_3 = QtGui.QGridLayout(self.dockWidgetContents_2)
+        self.gridLayout_3.setObjectName(_fromUtf8("gridLayout_3"))
+        self.logTextEdit = QtGui.QTextEdit(self.dockWidgetContents_2)
+        self.logTextEdit.setObjectName(_fromUtf8("logTextEdit"))
+        self.gridLayout_3.addWidget(self.logTextEdit, 0, 0, 1, 1)
+        self.logDockWidget.setWidget(self.dockWidgetContents_2)
+        MainWindow.addDockWidget(QtCore.Qt.DockWidgetArea(2), self.logDockWidget)
+        self.toolBar = QtGui.QToolBar(MainWindow)
+        self.toolBar.setObjectName(_fromUtf8("toolBar"))
+        MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.toolBar)
+        self.actionCreateGroup = QtGui.QAction(MainWindow)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/icons/icons/cluster.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionCreateGroup.setIcon(icon)
+        self.actionCreateGroup.setObjectName(_fromUtf8("actionCreateGroup"))
+        self.actionAddNewDut = QtGui.QAction(MainWindow)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(_fromUtf8(":/icons/icons/add_device.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionAddNewDut.setIcon(icon1)
+        self.actionAddNewDut.setObjectName(_fromUtf8("actionAddNewDut"))
+        self.actionRemoveDut = QtGui.QAction(MainWindow)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap(_fromUtf8(":/icons/icons/minus.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionRemoveDut.setIcon(icon2)
+        self.actionRemoveDut.setObjectName(_fromUtf8("actionRemoveDut"))
+        self.actionConfigureDut = QtGui.QAction(MainWindow)
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap(_fromUtf8(":/icons/icons/config.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionConfigureDut.setIcon(icon3)
+        self.actionConfigureDut.setObjectName(_fromUtf8("actionConfigureDut"))
+        self.actionRefresh = QtGui.QAction(MainWindow)
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap(_fromUtf8(":/icons/icons/refresh.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionRefresh.setIcon(icon4)
+        self.actionRefresh.setObjectName(_fromUtf8("actionRefresh"))
+        self.actionOpenDutView = QtGui.QAction(MainWindow)
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap(_fromUtf8(":/icons/icons/monitor.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionOpenDutView.setIcon(icon5)
+        self.actionOpenDutView.setObjectName(_fromUtf8("actionOpenDutView"))
+        self.actionLoadWorkSpace = QtGui.QAction(MainWindow)
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap(_fromUtf8(":/icons/icons/load.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionLoadWorkSpace.setIcon(icon6)
+        self.actionLoadWorkSpace.setObjectName(_fromUtf8("actionLoadWorkSpace"))
+        self.actionSaveWorkSpace = QtGui.QAction(MainWindow)
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap(_fromUtf8(":/icons/icons/save.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionSaveWorkSpace.setIcon(icon7)
+        self.actionSaveWorkSpace.setObjectName(_fromUtf8("actionSaveWorkSpace"))
+        self.actionConfigServer = QtGui.QAction(MainWindow)
+        self.actionConfigServer.setIcon(icon3)
+        self.actionConfigServer.setObjectName(_fromUtf8("actionConfigServer"))
+        self.actionStartListener = QtGui.QAction(MainWindow)
+        icon8 = QtGui.QIcon()
+        icon8.addPixmap(QtGui.QPixmap(_fromUtf8(":/icons/icons/socket.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionStartListener.setIcon(icon8)
+        self.actionStartListener.setObjectName(_fromUtf8("actionStartListener"))
+        self.toolBar.addAction(self.actionCreateGroup)
+        self.toolBar.addAction(self.actionRefresh)
+        self.toolBar.addSeparator()
+        self.toolBar.addAction(self.actionLoadWorkSpace)
+        self.toolBar.addAction(self.actionSaveWorkSpace)
+        self.toolBar.addAction(self.actionStartListener)
+        self.toolBar.addSeparator()
+        self.toolBar.addAction(self.actionConfigServer)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(_translate("MainWindow", "Ultra Software Test Automation Framework", None))
+        self.groupBox.setTitle(_translate("MainWindow", "Group Pool Viewer", None))
+        self.logDockWidget.setToolTip(_translate("MainWindow", "Log Viewer", None))
+        self.toolBar.setWindowTitle(_translate("MainWindow", "toolBar", None))
+        self.actionCreateGroup.setText(_translate("MainWindow", "CreateGroup", None))
+        self.actionCreateGroup.setToolTip(_translate("MainWindow", "<html><head/><body><p>create a DUT pool for same test purpose</p></body></html>", None))
+        self.actionAddNewDut.setText(_translate("MainWindow", "addNewDut", None))
+        self.actionAddNewDut.setToolTip(_translate("MainWindow", "Add a new Device Under Test", None))
+        self.actionRemoveDut.setText(_translate("MainWindow", "removeDut", None))
+        self.actionRemoveDut.setToolTip(_translate("MainWindow", "Remove a Device under Test", None))
+        self.actionConfigureDut.setText(_translate("MainWindow", "configureDut", None))
+        self.actionConfigureDut.setToolTip(_translate("MainWindow", "edit DUT info", None))
+        self.actionRefresh.setText(_translate("MainWindow", "refresh", None))
+        self.actionRefresh.setToolTip(_translate("MainWindow", "refresh Dut Status", None))
+        self.actionOpenDutView.setText(_translate("MainWindow", "openDutView", None))
+        self.actionLoadWorkSpace.setText(_translate("MainWindow", "loadWorkSpace", None))
+        self.actionSaveWorkSpace.setText(_translate("MainWindow", "saveWorkSpace", None))
+        self.actionConfigServer.setText(_translate("MainWindow", "configServer", None))
+        self.actionStartListener.setText(_translate("MainWindow", "startListener", None))
+
+import resources_rc_rc
