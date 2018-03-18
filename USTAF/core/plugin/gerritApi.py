@@ -7,8 +7,8 @@ from USTAF.core.logger import LOGGER
 import traceback
 
 def gerritRequest(query_url):
-    username = 'shan3'
-    password = "74u/NCp6OS5+TpEOzlK+xc4VmJ/21VZa0gchn4rlGA"
+    username = 'username'
+    password = "password"
     base_url = query_url
     try:
         time.sleep(0.1)
@@ -59,7 +59,7 @@ def getMergeSlotInfo(change_id, bundle_id_list):
     if '/' in change_id:
         change_id = change_id.split('/')[0]
 
-    query_url = "https://icggerrit.corp.sample.com/a/changes/%s/detail/?o=CURRENT_REVISION&o=CURRENT_COMMIT" % change_id
+    query_url = "https://sample.com/a/changes/%s/detail/?o=CURRENT_REVISION&o=CURRENT_COMMIT" % change_id
     rc = gerritRequest(query_url)
     _d["subject"] = rc['subject']
     if 'Merge' in rc['subject']:
